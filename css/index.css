@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 800px;
+    width: 90%;
+  }
+}
 .nav-section {
   width: 100%;
   border-bottom: 1.3px dashed #C0C0C0;
@@ -213,6 +219,11 @@ img {
 .home .welcome-header .secondary-header .funbus-welcome {
   padding-top: 1rem;
 }
+@media (max-width: 500px) {
+  .home .welcome-header {
+    border-bottom: 1.3px dashed #C0C0C0;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -230,6 +241,16 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-section .text-content,
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -241,6 +262,12 @@ img {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .content-destination {
   width: 75%;
