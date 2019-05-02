@@ -188,6 +188,12 @@ img {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  .nav-section .nav-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
