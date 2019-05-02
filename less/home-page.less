@@ -11,7 +11,10 @@
 
     @media @mobile {
       border-bottom: 1.3px dashed @navigation-border;
+      .secondary-header {
         width: 100%;
+      }
+      
     }
   }
 
@@ -71,7 +74,10 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
       width: 100%;
+    }
   }
 
   .content-pick {
@@ -85,9 +91,25 @@
       margin-bottom: 30px;
 
       .btn {
-        width: 80%;
-          height: 50px;
+        .button(40%,white,rgb(72,160,181));
       }
+    }
+
+    @media @mobile {
+      .flex-mixin(column);
+
+      .destination {
+        width: 80%;
+        margin: auto;
+
+        .btn {
+          height: 50px;
+          font-size: 20px;
+          .button(100%, white, rgb(72,160,181));
+        }
+      }
+
+      
     }
   }
 }// home
