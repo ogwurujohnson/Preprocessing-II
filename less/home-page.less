@@ -95,13 +95,17 @@
       }
     }
 
+    // Create a mobile version using media query, also
+    // making use of the at-nesting
     @media @mobile {
       .flex-mixin(column);
 
+      // destination section
       .destination {
         width: 80%;
         margin: auto;
 
+        // button section using the button mixin
         .btn {
           height: 50px;
           font-size: 20px;
