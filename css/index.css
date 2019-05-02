@@ -203,9 +203,11 @@ img {
   }
   .nav-section .nav-header .navigation-pane {
     padding-top: 3rem;
+    width: 80%;
+    margin: auto;
   }
   .nav-section .nav-header .navigation-pane a {
-    padding-right: 3rem;
+    padding-right: 51.5px;
   }
 }
 .footer {
