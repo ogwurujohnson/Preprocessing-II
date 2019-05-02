@@ -343,3 +343,30 @@ img {
     transition: 2s ease-in-out;
   }
 }
+.home .register-package .registeration-form {
+  display: flex;
+  flex-direction: column;
+}
+.home .register-package .registeration-form .box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.home .register-package .registeration-form .box input {
+  width: 70%;
+  height: 30px;
+  border: 1 px solid black;
+}
+.home .register-package .registeration-form .box label {
+  padding-bottom: 1rem;
+}
+.home .register-package .registeration-form .box textarea {
+  margin-bottom: 2rem;
+  border: 1px solid black;
+}
+.form-section .submit {
+  border: 1px solid black;
+  padding: 10px;
+  width: 100px;
+}
