@@ -193,6 +193,7 @@ img {
   padding-right: 2rem;
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .nav-section .nav-header {
@@ -200,9 +201,11 @@ img {
     flex-direction: column;
     align-items: center;
   }
+  .nav-section .nav-header .navigation-pane {
+    padding-top: 3rem;
+  }
   .nav-section .nav-header .navigation-pane a {
     padding-right: 3rem;
-    margin-top: 3rem;
   }
 }
 .footer {
