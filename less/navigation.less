@@ -2,7 +2,7 @@
 // Style navigation section
 .nav-section {
     width: 100%;
-    border-bottom: 1.2px dashed @navigation-border;
+    border-bottom: 1.3px dashed @navigation-border;
 
     // Nest nav-header section to the nav-section
     .nav-header {
@@ -13,16 +13,24 @@
         .flex-mixin(row);
         justify-content: space-between;
         align-items: baseline;
-        padding-bottom: 1.0rem;
-        padding-top: 1.0rem;
+        padding-bottom: @small-padding;
+        padding-top: @small-padding;
     
         // Nest the navigation-pane section to the nav header
         .navigation-pane {
             a {
-                padding-right: 2.0rem;
+                padding-right: @medium-padding;
                 text-decoration: none;
                 color: @navigation-link;
             }
+        }
+    }
+}
+
+.welcome-header {
+    .secondary-header {
+        .funbus-welcome {
+            padding-top: @small-padding;
         }
     }
 }

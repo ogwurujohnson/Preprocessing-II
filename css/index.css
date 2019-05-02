@@ -170,7 +170,7 @@ img {
 }
 .nav-section {
   width: 100%;
-  border-bottom: 1.2px dashed #C0C0C0;
+  border-bottom: 1.3px dashed #C0C0C0;
 }
 .nav-section .nav-header {
   max-width: 800px;
@@ -187,6 +187,9 @@ img {
   padding-right: 2rem;
   text-decoration: none;
   color: black;
+}
+.welcome-header .secondary-header .funbus-welcome {
+  padding-top: 1rem;
 }
 .footer {
   width: 100%;
