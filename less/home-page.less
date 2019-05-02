@@ -91,7 +91,11 @@
       margin-bottom: 30px;
 
       .btn {
-        .button(40%,white,rgb(72,160,181));
+        .button(40%,white,@eastern-blue);
+        &:hover {
+          .buttoneffect(@hover-color, 10%);
+          transition: 2s ease-in-out;
+        }
       }
     }
 
@@ -109,8 +113,15 @@
         .btn {
           height: 50px;
           font-size: 20px;
-          .button(100%, white, rgb(72,160,181));
+          .button(100%, white, @eastern-blue);
+          &:hover {
+          .buttoneffect(@hover-color, 10%);
+          transition: 2s ease-in-out;
         }
+        }
+        // .btn:hover {
+        //   background-color: blue;
+        // }
       }
 
       

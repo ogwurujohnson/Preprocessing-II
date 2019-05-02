@@ -309,7 +309,11 @@ img {
   margin-bottom: 2rem;
   text-align: center;
   color: white;
-  background: #48a0b5;
+  background: #17A2B8;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #006667;
+  transition: 2s ease-in-out;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -332,6 +336,10 @@ img {
     margin-bottom: 2rem;
     text-align: center;
     color: white;
-    background: #48a0b5;
+    background: #17A2B8;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-color: #006667;
+    transition: 2s ease-in-out;
   }
 }
