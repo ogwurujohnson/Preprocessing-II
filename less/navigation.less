@@ -27,6 +27,14 @@
         
         @media @mobile {
             .flex-mixin(column);
+            align-items: center;
+
+            .navigation-pane {
+                a {
+                    padding-right: @large-padding;
+                    margin-top: @large-margin;
+                }
+            }
         }
     }
 }
