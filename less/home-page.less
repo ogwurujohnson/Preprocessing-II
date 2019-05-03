@@ -1,4 +1,22 @@
+
+
 .home {
+
+  .welcome-header {
+    .secondary-header {
+      .funbus-welcome {
+        padding-top: @small-padding;
+      }
+    }
+
+    @media @mobile {
+      border-bottom: 1.3px dashed @navigation-border;
+      .secondary-header {
+        width: 100%;
+      }
+      
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -21,6 +39,13 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      .flex-mixin(column);
+      .text-content, .img-content {
+        width: 100%;
+      }
+    }
   }
 
   .inverse-content {
@@ -36,6 +61,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      .flex-mixin(column-reverse);
+    }
   }
 
   .content-destination {
@@ -44,6 +73,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -56,6 +89,81 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button(40%,white,@eastern-blue);
+        &:hover {
+          .buttoneffect(@hover-color, 10%);
+          transition: 2s ease-in-out;
+        }
+      }
+    }
+
+    // Create a mobile version using media query, also
+    // making use of the at-nesting
+    @media @mobile {
+      .flex-mixin(column);
+
+      // destination section
+      .destination {
+        width: 80%;
+        margin: auto;
+
+        // button section using the button mixin
+        .btn {
+          height: 50px;
+          font-size: 20px;
+          .button(100%, white, @eastern-blue);
+          &:hover {
+          .buttoneffect(@hover-color, 10%);
+          transition: 2s ease-in-out;
+        }
+        }
+        // .btn:hover {
+        //   background-color: blue;
+        // }
+      }
+
+      
+    }
+    border-bottom: 1px solid @navigation-border;
+  }
+
+  .register-package {
+    
+    h1 {
+      font-size: @large-font;
+    }
+    .registeration-form {
+      .flex-mixin(column);
+
+      .box {
+        flex: 1;
+        .flex-mixin(column);
+        margin-top: @medium-padding;
+
+        input {
+          width: 70%;
+          height: 30px;
+          border: 1px solid black;
+        }
+
+        label {
+          padding-bottom: @small-padding;
+        }
+
+        textarea {
+          margin-bottom: @medium-margin;
+          border: 1px solid black;
+        }
+      }
+      .submit {
+        .button(100%, white, @eastern-blue);
+        &:hover {
+        .buttoneffect(@hover-color, 10%);
+        transition: 2s ease-in-out;
+      }
     }
   }
+}
 }// home

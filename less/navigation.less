@@ -1,1 +1,50 @@
 // Navigation Styles here
+// Style navigation section
+.nav-section {
+    width: 100%;
+    border-bottom: 1.3px dashed @navigation-border;
+
+    // Nest nav-header section to the nav-section
+    .nav-header {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        // using the mixin for flex
+        .flex-mixin(row);
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: @small-padding;
+        padding-top: @small-padding;
+    
+        // Nest the navigation-pane section to the nav header
+        .navigation-pane {
+            a {
+                padding-right: @medium-padding;
+                text-decoration: none;
+                color: @navigation-link;
+                font-size: @medium-font;
+            }
+        }
+        
+        // Create a mobile version using media query, also
+        // making use of the at-nesting
+        @media @mobile {
+            .flex-mixin(column);
+            align-items: center;
+            
+            .navigation-pane {
+                a {
+                    padding-right: 51.5px;
+                }
+                padding-top: @large-padding;
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+
+
+
+

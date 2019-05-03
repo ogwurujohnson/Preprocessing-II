@@ -1,1 +1,22 @@
 // Mixins in here
+.flex-mixin(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.button(@width, @color, @background) {
+    margin-top: @large-margin;
+    margin-top: @medium-margin;
+    padding: @small-padding;
+    padding-top: @small-padding;
+    width: @width;
+    border-radius: 12px;
+    margin-bottom: @medium-margin;
+    text-align: center;
+    color: @color;
+    background: @background;
+}
+
+.buttoneffect(@color, @opacity) {
+    background-color: darken(@color, 5%);
+}

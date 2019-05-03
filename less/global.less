@@ -43,4 +43,11 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  // Create a mobile version using media query, also
+  // making use of the at-nesting
+  @media @mobile {
+    max-width: 800px;
+    width: 90%;
+  }
 }
