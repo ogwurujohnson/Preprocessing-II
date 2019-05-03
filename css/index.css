@@ -294,6 +294,7 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #C0C0C0;
 }
 .home .content-pick .destination {
   width: 30%;
@@ -343,6 +344,9 @@ img {
     transition: 2s ease-in-out;
   }
 }
+.home .register-package h1 {
+  font-size: 2rem;
+}
 .home .register-package .registeration-form {
   display: flex;
   flex-direction: column;
@@ -356,7 +360,7 @@ img {
 .home .register-package .registeration-form .box input {
   width: 70%;
   height: 30px;
-  border: 1 px solid black;
+  border: 1px solid black;
 }
 .home .register-package .registeration-form .box label {
   padding-bottom: 1rem;
@@ -365,8 +369,19 @@ img {
   margin-bottom: 2rem;
   border: 1px solid black;
 }
-.form-section .submit {
-  border: 1px solid black;
-  padding: 10px;
-  width: 100px;
+.home .register-package .registeration-form .submit {
+  margin-top: 3rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+  background: #17A2B8;
+}
+.home .register-package .registeration-form .submit:hover {
+  background-color: #006667;
+  transition: 2s ease-in-out;
 }
